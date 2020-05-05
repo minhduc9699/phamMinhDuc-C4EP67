@@ -6,11 +6,8 @@
   <title>Document</title>
 </head>
 <body>
-  {% for idol in idols_data %}
-    <h1>{{loop.index}} {{idol.stage_name}}</h1>
-    <a href="/idol/{{idol._id}}">detail</a>
-    <a href="/delete/{{idol._id}}">delete</a>
-    <hr>
-  {% endfor %}
+  <h1>{{idol.stage_name}}</h1>
+  <h2>{{idol.k_name}}</h2>
+  <h3>{{idol.full_name}}</h3>
 </body>
 </html>
